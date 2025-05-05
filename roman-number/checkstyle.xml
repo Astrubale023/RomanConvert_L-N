@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Checkstyle//DTD Checkstyle Configuration 1.2//EN"
+        "https://checkstyle.org/dtds/configuration_1_2.dtd">
+
+<module name="Checker">
+    <module name="TreeWalker">
+
+        <module name="BooleanExpressionComplexity"/>
+        <module name="CyclomaticComplexity">
+            <property name="max" value="12"/>
+        </module>
+        <module name="MethodLength"/>
+        <module name="EmptyCatchBlock"/>
+        <module name="AvoidStarImport"/>
+        <module name="IllegalImport"/>
+        <module name="NeedBraces"/>
+
+    </module>
+
+    <module name="FileLength">
+        <property name="max" value="200"/>
+    </module>
+    <module name="LineLength">
+        <property name="max" value="200"/>
+    </module>
+    <module name="FileTabCharacter"/>
+    <module name="Header">
+        <property name="header" value="////////////////////////////////////////////////////////////////////\n// NICOLA SIMIONATO 2113190\n// LUCA MARCUZZO 2113198\n////////////////////////////////////////////////////////////////////"/>
+    </module>
+</module>
